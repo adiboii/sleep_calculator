@@ -1,46 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:sleep_calculator/InputOne.dart';
+import 'package:sleep_calculator/ResultsPage.dart';
+import 'package:sleep_calculator/components/CustomDropDown.dart';
+import 'package:sleep_calculator/home.dart';
+import 'package:sleep_calculator/themes/AppTheme.dart';
+import 'package:toggle_switch/toggle_switch.dart';
+
+import 'InputTwo.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: SleepCalculator(),
+    home: HomePage(),
     debugShowCheckedModeBanner: false,
+    theme: AppThemeData,
+    routes: {
+      '/inputOne': (context) => InputOne(),
+      '/inputTwo': (context) => InputTwo(),
+      '/resultPage': (context) => ResultPage(),
+    },
   ));
-}
-
-class SleepCalculator extends StatefulWidget {
-  const SleepCalculator({Key? key}) : super(key: key);
-
-  @override
-  State<SleepCalculator> createState() => _SleepCalculatorState();
-}
-
-class _SleepCalculatorState extends State<SleepCalculator> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Expanded(
-              flex: 1,
-              child: Column(
-                children: [
-                  Text(
-                    "slep teim",
-                  ),
-                  Text("SLEEP BETTER • WAKE BETTER"),
-                ],
-              ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Text("Hello"),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
 }
