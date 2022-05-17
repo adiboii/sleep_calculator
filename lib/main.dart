@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sleep_calculator/InputOne.dart';
 import 'package:sleep_calculator/ResultsPage.dart';
-import 'package:sleep_calculator/components/CustomDropDown.dart';
 import 'package:sleep_calculator/home.dart';
 import 'package:sleep_calculator/themes/AppTheme.dart';
 import 'package:toggle_switch/toggle_switch.dart';
