@@ -12,10 +12,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Header(),
+            SizedBox(height: 50),
             Container(
               child: Text(
                 "Welcome to slep teim, the app that \nfinds your perfect sleep.",
@@ -23,6 +24,7 @@ class HomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
+            SizedBox(height: 50),
             SCButton(
               label: 'START',
               onPress: () {

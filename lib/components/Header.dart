@@ -17,13 +17,15 @@ class Header extends StatelessWidget {
           SizedBox(
             child: SvgPicture.asset(
               "images/slepteim.svg",
-              height: 150,
+              height: 100,
             ),
           ),
           SizedBox(height: 20),
           Text(
             "SLEEP BETTER • WAKE BETTER",
-            style: Theme.of(context).textTheme.headline2,
+            style: Theme.of(context).textTheme.headline2?.copyWith(
+                  fontSize: 20,
+                ),
           ),
         ],
       ),

@@ -9,6 +9,7 @@ import 'InputTwo.dart';
 
 void main() {
   runApp(MaterialApp(
+    title: 'Slep Teim',
     home: HomePage(),
     debugShowCheckedModeBanner: false,
     theme: AppThemeData,

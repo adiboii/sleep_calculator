@@ -45,7 +45,6 @@ class SleepCalculator {
         : duration.subtract(Duration(hours: sleep));
 
     var res = DateFormat("hh:mma").format(recomended);
-    print("hey");
     return res.toString();
   }
 }
